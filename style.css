@@ -22,13 +22,28 @@ h1{
   font-size: 5em;
   color: #ffeead;
   text-shadow: .04em -.04em #ff6f69;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   text-align: center;
+}
+
+#numbers{
+  border: 1px solid black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 5% 10%;
+}
+
+.number{
+  background-color: #ffeead;
+  padding: 2%;
+  font-size: 3em;
+  color: #96ceb4;
 }
 
 footer{
   box-sizing: border-box;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   position: absolute;
     bottom: 0;
   width: 100%;
