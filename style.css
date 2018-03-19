@@ -26,6 +26,10 @@ h1{
   text-align: center;
 }
 
+#main{
+  border: 1px solid blue;
+}
+
 #numbers{
   border: 1px solid black;
   display: flex;
