@@ -19,27 +19,67 @@ body{
 }
 
 h1{
+  padding: 2% 3%;
   font-size: 5em;
   color: #ffeead;
   text-shadow: .04em -.04em #ff6f69;
-  border: 1px solid black;
+
   text-align: center;
 }
 
-#main{
-  border: 1px solid blue;
+input {
+  border-style: none;
+  font-size: 1em;
+  text-align: center;
+  color: #ffeead;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: inset 0 0 20px 4px rgba(0,0,0,0.3);
+}
+
+#number-input{
+  background-color: #96ceb4;
+  border: 3px solid #ff6f69;
+  color: grey;
+  border-radius: 50px;
+  font-size: 3em;
+  position: relative;
+  left: 40%;
+  height: 1.5em;
+  width: 4em;
+  padding: .5em;
+}
+
+#submit{
+  border-radius: 100%;
+  font-size: 1.7em;
+  color: rgba(0,0,0,0.4);
+  background-color: #ff6f69;
+  padding: .3em;
+  position: relative;
+  left: 36%;
+  top: 15px;
+  box-shadow: inset 1px 1px 20px 5px rgba(175, 81, 78, 0.9);
+}
+
+#submit:hover{
+  color: #ffeead;
 }
 
 #message{
   color: #ff6f69;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 50px;
   font-size: 1.2em;
   margin: 1%;
+  margin-top: 3%;
   text-align: center;
 }
 
 #numbers{
-  border: 1px solid black;
+  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -53,12 +93,20 @@ h1{
   color: #96ceb4;
 }
 
-footer{
-  box-sizing: border-box;
-  border: 1px solid black;
-  position: absolute;
-    bottom: 0;
-  width: 100%;
-  padding: 1em;
-  text-align: right;
+#btn-container{
+  display:flex;
+  justify-content: space-around;
+}
+
+.btn{
+  width: 47%;
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 50px;
+  font-size: 1.5em;
+  padding: .2em;
+}
+
+.btn:hover{
+  background-color: rgba(0,0,0,0.4);
+  color: #ff6f69;
 }

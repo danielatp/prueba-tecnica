@@ -36,6 +36,7 @@ function clearAllNumbers(){
   while(parent.firstChild){
     parent.removeChild(parent.firstChild)
   }
+  document.getElementById('message').innerHTML = ''
   NUMBERS = []
 }
 
@@ -79,6 +80,7 @@ function reorderNumbers(){
     var id = numArray[i]
     document.getElementById(id).style.order = i
   }
+  document.getElementById('message').innerHTML = ''
 }
 
 document.getElementById('submit').addEventListener('click',addNumber)
