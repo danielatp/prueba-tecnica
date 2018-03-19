@@ -1,13 +1,3 @@
-/*
-http://www.color-hex.com/color-palette/895
-
-verde1: #96ceb4 - rgb(150, 206, 180)
-verde2: #88d8b0 - rgb(136,216,176)
-amarillo: #ffeead - rgb((255,238,173))
-mostaza: #ffcc5c - rgb(255,204,92)
-salmon: #ff6f69 - rgb(255,111,105)
-*/
-
 *{
   margin: 0;
   padding: 0;
@@ -23,8 +13,12 @@ h1{
   font-size: 5em;
   color: #ffeead;
   text-shadow: .04em -.04em #ff6f69;
-
   text-align: center;
+}
+
+#main-header{
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -45,10 +39,8 @@ input:focus {
   color: grey;
   border-radius: 50px;
   font-size: 3em;
-  position: relative;
-  left: 40%;
   height: 1.5em;
-  width: 4em;
+  width: 30%;
   padding: .5em;
 }
 
@@ -57,11 +49,11 @@ input:focus {
   font-size: 1.7em;
   color: rgba(0,0,0,0.4);
   background-color: #ff6f69;
-  padding: .3em;
-  position: relative;
-  left: 36%;
-  top: 15px;
+  height: 2em;
+  width: 2em;
   box-shadow: inset 1px 1px 20px 5px rgba(175, 81, 78, 0.9);
+  align-self: center;
+  margin: 1vw;
 }
 
 #submit:hover{
@@ -69,21 +61,21 @@ input:focus {
 }
 
 #message{
+  display: block;
   color: #ff6f69;
   background-color: rgba(0,0,0,0.2);
   border-radius: 50px;
   font-size: 1.2em;
   margin: 1%;
-  margin-top: 3%;
   text-align: center;
 }
 
 #numbers{
-  /* border: 1px solid black; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding: 5% 10%;
+  transition : all 5s ease-out;
 }
 
 .number{
@@ -91,11 +83,13 @@ input:focus {
   padding: 2%;
   font-size: 3em;
   color: #96ceb4;
+  transition: all 3s ease-out;
 }
 
 #btn-container{
   display:flex;
   justify-content: space-around;
+  margin: 5vh;
 }
 
 .btn{
@@ -109,4 +103,15 @@ input:focus {
 .btn:hover{
   background-color: rgba(0,0,0,0.4);
   color: #ff6f69;
+}
+
+@media only screen and (max-width: 600px) {
+  h1{
+    font-size: 3em;
+    margin-bottom: 5vh;
+  }
+
+  .btn{
+    font-size: 1em;
+  }
 }
