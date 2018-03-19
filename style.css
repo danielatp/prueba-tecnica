@@ -30,6 +30,14 @@ h1{
   border: 1px solid blue;
 }
 
+#message{
+  color: #ff6f69;
+  background-color: rgba(0,0,0,0.3);
+  font-size: 1.2em;
+  margin: 1%;
+  text-align: center;
+}
+
 #numbers{
   border: 1px solid black;
   display: flex;
