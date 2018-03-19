@@ -1,17 +1,25 @@
 var NUMBERS = []
 
 function checkNumber(n){
+  var isValidNumber = true
   var p = document.getElementById('message')
   if(!Number(n)){
     p.innerHTML = 'Solo números!!'
+    isValidNumber = false
   }
-  if(NUMBERS.indexOf(n) > -1){
+  else if(NUMBERS.indexOf(n) > -1){
     p.innerHTML = 'yala'
+    isValidNumber = false
   }
-  if(n === '-0'){
+  else if(n === '-0'){
     p.innerHTML = '-0???'
+    isValidNumber = false
   }
-  return Number(n) && NUMBERS.indexOf(n) == -1 && n !== '-0'
+  else if(Number(n) !== Math.floor(Number(n))){
+    p.innerHTML = 'Solo números enteros!'
+    isValidNumber = false
+  }
+  return isValidNumber
 }
 
 function addNumber(){
