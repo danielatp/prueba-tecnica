@@ -14,6 +14,7 @@ h1{
   color: #ffeead;
   text-shadow: .04em -.04em #ff6f69;
   text-align: center;
+  margin-bottom: 5vh;
 }
 
 #main-header{
@@ -108,7 +109,6 @@ input:focus {
 @media only screen and (max-width: 600px) {
   h1{
     font-size: 3em;
-    margin-bottom: 5vh;
   }
 
   .btn{
